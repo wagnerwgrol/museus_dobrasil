@@ -1,0 +1,200 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url('imagens/01capa.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixa o fundo durante a rolagem */
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+}
+
+/* Estilo do header */
+header {
+    background: rgba(255, 255, 255, 0.25); /* Fundo branco opaco */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+header nav ul li a {
+    color: #000; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #000;
+    text-decoration: overline; /* Mantém o sublinhado removido */
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #000;
+}
+
+/* Estilo do main */
+main {
+    flex: 1;
+    max-width: 100%; /* Usa toda a largura disponível */
+    margin: 0 auto;
+    padding: 20px; /* Adiciona algum preenchimento */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+
+/* Estilo do filtro */
+.filtro-container {
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+    width: 100%;
+    max-width: 300px; /* Largura máxima opcional */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding:10px 0px; /* Espaçamento interno opcional */
+    border-radius: 8px; /* Bordas arredondadas opcionais */
+}
+
+.filtro-container label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.filtro-container input {
+    width: 230px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.filtro-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filtro-container button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilização do card do museu */
+.museu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 660px;
+    background-color: rgba(249, 249, 249, 0.9); /* Cor de fundo com 90% de opacidade */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para o efeito de hover */
+}
+
+
+.museu-card img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta a imagem para caber dentro do contêiner */
+    object-position: top; /* Garante que a parte superior da imagem seja visível */
+}    
+
+.museu-info {
+    padding: 15px;
+}
+
+.museu-info h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.museu-info p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.museu-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.museu-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização para a área dos resultados */
+#resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mensagem-erro {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    color: #ff0000; /* Define a cor do texto para vermelho */
+    background-color: #ffe6e6; /* Cor de fundo para destacar a mensagem */
+    padding: 15px; /* Adiciona preenchimento ao redor do texto */
+    border: 1px solid #ff0000; /* Adiciona uma borda vermelha ao redor da mensagem */
+    border-radius: 5px; /* Arredonda os cantos da borda */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px; /* Adiciona margem para separar a mensagem do restante do conteúdo */
+}
+
+
+/* Estiliza o rodapé da página */
+footer {
+    background: rgba(255, 255, 255, 0.25);
+    color: #000; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 24px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    position: relative; /* Remove o position absolute */
+}

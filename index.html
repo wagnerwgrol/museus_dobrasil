@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museus das Capitais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Museus das Capitais Brasileiras</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#museus">Museus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filtro-container">
+            <input list="capitais" id="capital-filtro" placeholder="Digite o nome de uma capital">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </div>
+        <div id="resultados"></div>
+    </main>
+
+    <div>
+
+        <footer>
+            <p>&copy; Todos os Direitos Reservados/2024</p>
+        </footer>
+    </div>
+
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
